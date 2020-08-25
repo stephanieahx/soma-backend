@@ -4,6 +4,7 @@
   "description": "A sentiment analysis application which charts trends in particular topics.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +21,7 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mongodb": "^3.6.0",
-    "mongoose": "^5.10.0"
+    "mongoose": "^5.10.0",
+    "nodemon": "^2.0.4"
   }
 }
