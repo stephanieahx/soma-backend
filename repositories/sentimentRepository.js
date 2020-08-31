@@ -100,12 +100,15 @@ async function bearerToken(auth) {
 
 module.exports = {
   // get tweets based on query from twitter api 
-
+  async getTwitterAPI(req, res) {
+    return tweetData;
+  },
 
   // Compute sentiment score of tweets 
   async compute(tweetData) {
     try {
       sentimentScore = sentiment.analyze(tweetData);
+      return sentimentScore;
     } catch (err) {
       console.log(err);
     };
@@ -124,6 +127,6 @@ module.exports = {
     } catch (err) {
       throw new Error(`Due to ${err.message}, you are not able to insert this item ${JSON.stringify}`)
     }
-  }, 
+  },
 
 }
