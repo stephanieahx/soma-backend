@@ -3,7 +3,7 @@ const { ObjectId } = require('mongodb');
 
 const axios = require('axios');
 
-// sentiment module set up
+// Sentiment module set up
 const Sentiment = require('sentiment');;
 const sentiment = new Sentiment();
 
@@ -33,8 +33,8 @@ const util = require('util');
 const get = util.promisify(request.get);
 const post = util.promisify(request.post);
 
-const consumer_key = ''; // Add your API key here
-const consumer_secret = ''; // Add your API secret key here
+const consumer_key = process.env.consumer_key; 
+const consumer_secret = process.env.consumer_secret; 
 
 const bearerTokenURL = new URL('https://api.twitter.com/oauth2/token');
 const searchURL = new URL('https://api.twitter.com/labs/2/tweets/search');

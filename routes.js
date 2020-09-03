@@ -16,7 +16,7 @@ module.exports = app => {
     // SENTIMENT
     // Search topic on twitter for current (today's) sentiment score
 
-    // Add topic to tracked 
+    // User adds topic to tracked || Add topic to tracked  
 
     // TRENDS
     // Show dashboard of trend charts (daily sentiment scores) of topics saved by user
